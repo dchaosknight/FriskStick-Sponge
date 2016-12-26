@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'io.github.dchaosknight.friskstick'
-version '1.0 Alpha'
+version '1.0.0'
 
 apply plugin: 'java'
 

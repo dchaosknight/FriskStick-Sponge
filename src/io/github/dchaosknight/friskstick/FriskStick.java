@@ -3,8 +3,8 @@ package io.github.dchaosknight.friskstick;
 import com.google.inject.Inject;
 import io.github.dchaosknight.friskstick.bstats.Metrics;
 import io.github.dchaosknight.friskstick.commands.report.DeleteReportCommand;
-import io.github.dchaosknight.friskstick.commands.report.ReportCommand;
 import io.github.dchaosknight.friskstick.commands.report.ListReportCommand;
+import io.github.dchaosknight.friskstick.commands.report.ReportCommand;
 import io.github.dchaosknight.friskstick.data.ReportData;
 import io.github.dchaosknight.friskstick.listeners.BeatdownListener;
 import io.github.dchaosknight.friskstick.listeners.FriskListener;
@@ -48,7 +48,7 @@ import java.nio.file.Paths;
 
  */
 
-@Plugin(id = "friskstick", name = "FriskStick", version = "1.0 Alpha", description = "A plugin to frisk players!",
+@Plugin(id = "friskstick", name = "FriskStick", version = "1.0.0", description = "A plugin to frisk players!",
         authors = {"dchaosknight"})
 public class FriskStick {
 

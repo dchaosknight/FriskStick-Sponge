@@ -4,8 +4,6 @@ import io.github.dchaosknight.friskstick.FriskStick;
 import io.github.dchaosknight.friskstick.data.BeatdownData;
 import io.github.dchaosknight.friskstick.util.FriskUtil;
 import org.spongepowered.api.Sponge;
-import org.spongepowered.api.data.manipulator.mutable.entity.HealthData;
-import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.entity.DamageEntityEvent;
