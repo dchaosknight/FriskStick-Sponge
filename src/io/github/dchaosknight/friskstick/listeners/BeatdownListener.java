@@ -61,15 +61,8 @@ public class BeatdownListener {
 
         }
 
-        // Replenish lost health
-        HealthData data = player.getHealthData();
-        double actualHealth = data.health().get();
-
-        MutableBoundedValue<Double> newHealth = player.getHealthData().health();
-        newHealth.set(actualHealth + event.getFinalDamage());
-        data.set(newHealth);
-
-        player.offer(data);
+        // Cancel the damage
+        event.setBaseDamage(0);
 
     }
 

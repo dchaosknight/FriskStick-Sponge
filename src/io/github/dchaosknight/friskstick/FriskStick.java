@@ -164,14 +164,18 @@ public class FriskStick {
     @Listener
     public void onShutdown(GameStoppingServerEvent event) {
 
-        try {
+        if (config.getNode("enable-reporting").getBoolean()) {
 
-            ReportData.saveReportsToFile(reportFile);
+            try {
 
-        } catch (IOException e) {
+                ReportData.saveReportsToFile(reportFile);
 
-            logger.error("Could not save reports to file!");
-            e.printStackTrace();
+            } catch (IOException e) {
+
+                logger.error("Could not save reports to file!");
+                e.printStackTrace();
+
+            }
 
         }
 

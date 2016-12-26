@@ -135,7 +135,7 @@ public class FriskUtil {
 
             }
 
-            // If no drugs were found...
+        // If no drugs were found...
         } else {
 
             // Send corresponding messages to the players
