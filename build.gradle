@@ -1,0 +1,22 @@
+plugins {
+
+    id 'org.spongepowered.plugin' version '0.6'
+
+}
+
+group 'io.github.dchaosknight.friskstick'
+version '1.0 Alpha'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'sponge'
+        url = 'http://repo.spongepowered.org/maven'
+    }
+}
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:5.0.0'
+}

@@ -1,6 +1,7 @@
 package io.github.dchaosknight.friskstick;
 
 import com.google.inject.Inject;
+import io.github.dchaosknight.friskstick.bstats.Metrics;
 import io.github.dchaosknight.friskstick.commands.report.DeleteReportCommand;
 import io.github.dchaosknight.friskstick.commands.report.ReportCommand;
 import io.github.dchaosknight.friskstick.commands.report.ListReportCommand;
@@ -8,9 +9,7 @@ import io.github.dchaosknight.friskstick.data.ReportData;
 import io.github.dchaosknight.friskstick.listeners.BeatdownListener;
 import io.github.dchaosknight.friskstick.listeners.FriskListener;
 import ninja.leaping.configurate.ConfigurationNode;
-import ninja.leaping.configurate.commented.CommentedConfigurationNode;
 import ninja.leaping.configurate.hocon.HoconConfigurationLoader;
-import ninja.leaping.configurate.loader.ConfigurationLoader;
 import ninja.leaping.configurate.objectmapping.ObjectMappingException;
 import org.slf4j.Logger;
 import org.spongepowered.api.Game;
@@ -70,6 +69,10 @@ public class FriskStick {
     private Path reportFile;
 
     private ConfigurationNode config;
+
+    // bStats instance
+    @Inject
+    private Metrics metrics;
 
     @Listener
     public void onPreInit(GamePreInitializationEvent event) {
