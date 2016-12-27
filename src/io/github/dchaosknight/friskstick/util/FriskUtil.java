@@ -126,7 +126,7 @@ public class FriskUtil {
                 List<String> jails = config.getNode("jail-list").getList(name -> (String) name);
 
                 // Generate a random index from the list of jails
-                int jailIndex = new Random().nextInt() % jails.size();
+                int jailIndex = Math.abs(new Random().nextInt() % jails.size());
 
                 // Run the jail command
                 plugin.getGame().getCommandManager().process(Sponge.getServer().getConsole(), config
