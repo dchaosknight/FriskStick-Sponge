@@ -48,7 +48,7 @@ import java.nio.file.Paths;
 
  */
 
-@Plugin(id = "friskstick", name = "FriskStick", version = "1.0.0", description = "A plugin to frisk players!",
+@Plugin(id = "friskstick", name = "FriskStick", version = "1.0.1", description = "A plugin to frisk players!",
         authors = {"dchaosknight"})
 public class FriskStick {
 
